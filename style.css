@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: poppins;
+}
+.container{
+    width: 350px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+
+    /* PARTE MAGICA */
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+.brand-logo{
+    height: 100px;
+    width: 100px;
+    background: url(./visual.jpg) no-repeat center;
+    background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+
+    /* PARTE MAGICA */
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+    transition: 0.2s;
+}
+.brand-logo:hover{
+    background: url(./visual2.jpg) no-repeat right;
+    background-size: cover;
+    background-position-x: 500px;
+    animation: anima 0.1s forwards;
+}
+@keyframes anima{
+    to{
+        background-position-x: -20px;
+    }
+}
+.brand-input{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 25px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 0;
+
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+button{
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s;
+    border: 0;
+    color: #ecf0f3;
+
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+}
+button:hover{
+    background: #ecf0f3;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    color: #1DA1F2;
+    transition: 0.5s;
+}
